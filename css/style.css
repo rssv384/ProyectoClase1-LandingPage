@@ -32,6 +32,8 @@ header {
 	height: 90px;
 
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+	/* Mantener header en la primera capa, encima del resto de componentes */
+	z-index: 4;
 }
 
 #logo,
