@@ -19,6 +19,7 @@ body {
 	color: #000000;
 }
 
+/* #region HEADER */
 header {
 	display: flex;
 	flex-direction: row;
@@ -79,17 +80,28 @@ nav li:hover,
 	border-radius: 8px;
 }
 
+/* #endregion HEADER */
+
 main {
 	padding-top: 90px;
 }
 
+/* #region SECTIONS */
+
 section {
 	display: block;
-	height: 100vh;
 	scroll-margin-top: 90px;
 	padding: 45px 90px;
 }
 
+/* TEMPORAL */
+section:not(#destacados) {
+	height: 100vh;
+}
+
+/* #endregion */
+
+/*  #region ENCABEZADOS */
 h1 {
 	text-transform: uppercase;
 	font-size: 2.5rem;
@@ -104,6 +116,9 @@ h3 {
 	font-size: 1.25rem;
 }
 
+/* #endregion */
+
+/* #region HOME */
 #home {
 	display: flex;
 	flex-direction: column;
@@ -130,6 +145,67 @@ h3 {
 	padding: 3rem;
 }
 
+/* #endregion */
+
+/* #region DESTACADOS */
+.destacados-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	gap: 3rem;
+}
+
+.destacado-info {
+	flex: 1;
+	text-align: center;
+	padding: 2rem;
+	background: #ffffff;
+	box-shadow: 0 10px 8px rgba(95, 186, 167, 0.15);
+	border-radius: 5px;
+}
+
+.destacado-info img {
+	max-width: 100%;
+}
+
+.star-rating {
+	color: gold;
+	font-size: 1.5rem;
+}
+
+.clientes-comentarios {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.comentario {
+	display: flex;
+	gap: 10px;
+	padding: 15px;
+	background-color: hsl(167, 40%, 85%);
+	border-radius: 15px;
+}
+
+.cliente img {
+	width: 60px;
+	border-radius: 50%;
+}
+
+.cliente-msg {
+	flex: 1;
+	margin: 0.5rem;
+}
+
+.cliente-firma {
+	font-style: italic;
+	font-weight: bold;
+}
+/* #endregion */
+
+/* #region FOOTER */
 footer {
 	height: 50vh;
 	padding: 45px 90px;
@@ -147,6 +223,9 @@ hr {
 	text-align: center;
 }
 
+/* #endregion */
+
+/* #region BTN FLOTANTE */
 #btn-ir-arriba {
 	cursor: pointer;
 
@@ -175,3 +254,4 @@ hr {
 	width: 25px;
 	fill: none;
 }
+/* #endregion */
