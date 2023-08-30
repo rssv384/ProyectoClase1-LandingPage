@@ -215,6 +215,7 @@ h3 {
 /* #region CATÁLOGO */
 .card-container {
 	display: flex;
+	margin-top: 1rem;
 }
 
 .card {
@@ -241,6 +242,10 @@ h3 {
 .card p {
 	margin-bottom: 10px;
 	color: #555;
+}
+
+.card:hover {
+	transform: translateY(-1rem);
 }
 
 button.btn {
