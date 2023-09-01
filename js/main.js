@@ -1,3 +1,5 @@
+const { FILE } = require('dns');
+
 console.log('Hola Mundo');
 
 // Mostrar alerta al dar click en el logo
@@ -27,4 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
 			behavior: 'smooth',
 		});
 	});
+});
+
+// Funcionalidad galeria overlay
+const galeriaImagenes = document.querySelectorAll('.galeria-img');
+const overlay = document.querySelector('.galeria-overlay');
+const overlayImagen = document.querySelector('.galeria-overlay-img');
+
+galeriaImagenes.forEach((imagen) => {
+	imagen.addEventListener('click', () => {
+		overlayImagen.src = imagen.src;
+		overlay.style.display = 'flex';
+	});
+});
+
+overlay.addEventListener('click', () => {
+	overlay.style.display = 'none';
+	overlayImagen.src = '';
 });

@@ -6,7 +6,7 @@
     <link rel="icon" type="x-icon" href="/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js" defer></script>
     <title>Bauhaus Inmobiliaria</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
             <ul>
                 <li><a href="#destacados">Destacados</a></li>
                 <li><a href="#catálogo">Catálogo</a></li>            
-                <li><a href="#galeria">Galería de Amenidades</a></li>
-                <li><a href="#ubicación">Ubicación</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
             </ul>
         </nav>
         <a href="#footer"><img id="contacto-icono" src="/img/call-us.png" title="Contáctanos"></a>
@@ -111,20 +111,26 @@
         <hr>
 
         <section id="galeria">
-            <h2>Amenidades</h2>
+            <h2>Galería de Amenidades</h2>
             <div class="galeria-container">
-                <img class="galeria-img" src="./img/amenidades/amenidades1.jpg" title="Amenidades 1">
-                <img class="galeria-img" src="./img/amenidades/amenidades2.jpg" title="Amenidades 2">
-                <img class="galeria-img" src="./img/amenidades/amenidades3.jpg" title="Amenidades 3">
+                <img class="galeria-img" src="./img/amenidades/amenidades1.jpg" alt="Amenidades 1">
+                <img class="galeria-img" src="./img/amenidades/amenidades2.jpg" alt="Amenidades 2">
+                <img class="galeria-img" src="./img/amenidades/amenidades3.jpg" alt="Amenidades 3">
             </div>
+
+            <div class="galeria-overlay">
+                <img src="" alt="Imagen ampliada" class="galeria-overlay-img">
+            </div>
+
         </section>
 
         <hr>
 
-        <section id="ubicación">
+        <section id="ubicacion">
             <h2>Ubicación</h2>
-            <h3>Ubicación va aquí.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum praesentium tempora laboriosam ab fugit fugiat amet est, mollitia neque exercitationem quaerat officiis earum dolores deserunt eveniet rem harum impedit.</p>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55773.503221578474!2d-111.0411738155837!3d29.110288010454855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce8447973925f7%3A0xcf527709b7555a3!2sUniversidad%20de%20Sonora%20-%20UNISON!5e0!3m2!1ses-419!2smx!4v1693417820639!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>            
         </section>
 
     </main>
