@@ -1,5 +1,3 @@
-const { FILE } = require('dns');
-
 console.log('Hola Mundo');
 
 // Mostrar alerta al dar click en el logo
