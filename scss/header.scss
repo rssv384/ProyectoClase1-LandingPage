@@ -1,0 +1,50 @@
+header {
+	background: var(--color-white);
+
+	position: fixed;
+	width: 100%;
+	height: var(--height-header);
+
+	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+	/* Mantener header en la primera capa, encima del resto de componentes */
+	z-index: 1;
+}
+
+#logo,
+#contacto-icono {
+	height: var(--height-nav-item);
+	width: auto;
+	margin: 15px;
+}
+
+#logo,
+#contacto-icono > img {
+	width: auto;
+	padding: 5px;
+}
+
+nav {
+	height: 60px;
+	font-size: 1.25rem;
+}
+
+nav ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+nav li {
+	padding: 1rem 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--color-secundario);
+	font-weight: 600;
+}
+
+nav li:hover,
+#contacto-icono:hover {
+	background-color: var(--color-background);
+	border-radius: 8px;
+}
