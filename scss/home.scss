@@ -1,0 +1,18 @@
+#home {
+	background: url('/img/home.jpg') no-repeat center center fixed;
+	background-size: cover;
+
+	color: var(--color-white);
+
+	height: 100vh;
+}
+
+.home-banner {
+	gap: 1rem;
+
+	background-color: hsl(210, 29%, 15%);
+	opacity: 0.9;
+	padding: 3rem;
+
+	text-align: center;
+}

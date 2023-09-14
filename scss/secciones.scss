@@ -1,0 +1,20 @@
+main {
+	padding-top: 90px;
+}
+
+section {
+	scroll-margin-top: 90px;
+	padding: 45px 90px;
+}
+
+section#catálogo {
+	background: linear-gradient(
+		to bottom right,
+		hsl(167, 40%, 60%),
+		hsl(204, 70%, 80%)
+	);
+}
+
+section#ubicacion {
+	padding: 0;
+}
